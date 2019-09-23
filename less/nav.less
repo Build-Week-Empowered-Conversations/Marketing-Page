@@ -1,20 +1,16 @@
 nav {
   .flex(space-between, center);
   top: 0;
-  // left: 0;
+  position: fixed;
   z-index: 9999;
-  width: 100%;
+  width: 100vw;
   height: 50px;
-  margin: 20px 0;
-
+  border: 1px solid red;
+  margin: 2vw;
 
   .navbar {
     .flex(space-between, center);
-    width: 66%;
-    // margin-top: 20px;
-    img {
-      margin: 20px 30px 10px;
-    }
+    width: 67vw;
     #nav-links{
       .flex(space-between, center);
       a {
@@ -24,8 +20,7 @@ nav {
   }
 
   #subscribe-top {
-    width: 40%;
-    .flex(center, center);
+    .flex(flex-end, center);
 
     form {
       flex-direction: column;
@@ -33,7 +28,7 @@ nav {
       font-family: 'Open Sans', sans-serif;
       font-size: 1.2rem;
       line-height: 1.4;
-      letter-spacing: .1rem;      margin: 10px;
+      letter-spacing: .1rem;
       .inputs {
         display: flex;
         font-size: 1rem;

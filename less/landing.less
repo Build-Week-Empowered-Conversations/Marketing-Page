@@ -6,21 +6,42 @@
 // //   min-height: 100%;
 // }
 
-body{
-  background-image: url('../images/aerial-shot-bird-s-eye-view-from-above-1556797.jpg');
+.landing{
+  background-image: url("../images/aerial-shot-bird-s-eye-view-from-above-1556797.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-
-  .overlay{
-  background-color: rgba(225, 225, 225, 0.5);
-  z-index:2;
-  button {
-    margin: 10px 10px 0px 5px;
-    padding:5px;
-    background-color: @dark-color;
-    color: white;
-    border-color: 2px solid white;
-
-  }
+  .hero {
+    display: flex;
+    .hero-text {
+      .flex(center, center);
+      flex-direction: column;
+      text-align: center;
+      color: white;
+      width: 67vw;
+      height: 100vh;
+    }
+    .overlay {
+      .flex(center, center);
+      flex-direction: column;
+      text-align: center;
+      background-color: rgba(225, 225, 225, 0.7);
+      z-index: 3;
+      width: 33vw;
+      height: 100vh;
+      color: @dark-color;
+      h2{
+        margin: 5% 10%;
+      }
+      p{
+        margin: 5% 15%;
+      }
+      button  #learnMore {
+        margin: 10px 10px 0px 5px;
+        padding:5px;
+        background-color: @dark-color;
+        color: white;
+        border-color: 2px solid white;
+      }
+    }
   }
 }
