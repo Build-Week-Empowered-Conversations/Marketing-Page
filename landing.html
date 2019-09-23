@@ -15,7 +15,7 @@
 
 <!-- NAVIGATION -->
   <nav class="fixed-nav">
-    <div id="navbar">
+    <div class="navbar">
       <img class="logo" src="images/EmpoweredConversation-Logo-Md.png" style="height: 50px;"/>
       <div id="nav-links">
         <a href="">HOW IT WORKS</a>
@@ -25,9 +25,11 @@
     </div>
     <div id="subscribe-top">
       <form action="/action_page.php">
-        <p>Subscribe to our Newsletter</p>
-        <input type="text" name="email" value="Email Address">
-        <input class="btn-white" type="submit" value="SUBSCRIBE">
+        <span>SUBSCRIBE TO OUR NEWSLETTER</span>
+        <div class='inputs'>
+          <input type="text" name="email" value="Email Address">
+          <button type="submit">SUBSCRIBE</button>
+        </div>
       </form>
     </div>
   </nav>
@@ -47,27 +49,32 @@
   <div class="overlay">
     <h2>When words matter most</h2>
     <p>A survivor-activated tool that educates and prepares the person they will disclose to before the conversation takes place.</p>
-    <button id="learnMore" href="HOWITWORKS PAGE">Learn More</button>
+    <button id="learnMore" href="../Marketing-Page/howitworks.html">Learn More</button>
   </div>
+
+</body>
 
 <!-- FOOTER -->
   <footer>
-    <div id='main-footer'>
-      <form action="/action_page.php">
-        <p>Subscribe to our Newsletter</p>
-        <input type="text" name="email" value="Email Address">
-        <input class="btn-white" type="submit" value="SUBSCRIBE">
-      </form>
-      <nav-links>
+    <div class='main-footer'>
+      <div id="subscribe-bottom">
+        <form action="/action_page.php">
+          <span>SUBSCRIBE TO OUR NEWSLETTER</span>
+          <div class='inputs'>
+            <input type="text" name="email" value="Email Address">
+            <button type="submit">SUBSCRIBE</button>
+          </div>
+        </form>
+      </div>
+      <div class='nav-links'>
         <a href="">HOW IT WORKS</a>
         <a href="">ABOUT</a>
         <a href="">BLOG</a>
         <a href="">CONTACT US</a>
-      </nav-links>
+      </div>
     </div>
-    <div id="footer-bar">
+    <div class="footer-bar">
       <span>© Empowered Conversations 2019. All rights reserved.</span>
-      <img class="logo" src="images/EmpoweredConversation-Logo-Md.png" style="height: 50px;"/>
       <div id="social">
           <a href="https://twitter.com/empoweredconvo/"><i class="fab fa-twitter"></i></a>
           <a href="https://www.facebook.com/empoweredconvo/"><i class="fab fa-facebook-f"></i></a>
@@ -75,5 +82,4 @@
       </div>
     </div>
   </footer>
-</body>
 </html>
