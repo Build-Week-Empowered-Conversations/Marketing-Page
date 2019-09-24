@@ -331,10 +331,10 @@ footer .main-footer #subscribe-bottom form .inputs input {
 }
 footer .main-footer #subscribe-bottom form .inputs button {
   margin: 10px 10px 0px 5px;
-  padding: 5px;
+  padding: 10px;
   background-color: #2A484E;
   color: white;
-  border-color: 2px solid white;
+  border: none;
 }
 .landing {
   background-image: url("../images/aerial-shot-bird-s-eye-view-from-above-1556797.jpg");
@@ -346,6 +346,9 @@ footer .main-footer #subscribe-bottom form .inputs button {
 }
 @media (max-width: 500px) {
   .landing .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -363,6 +366,14 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .hero .hero-text p {
   margin: 6vw;
 }
+@media (max-width: 500px) {
+  .landing .hero .hero-text {
+    height: 65vh;
+  }
+  .landing .hero .hero-text h1 {
+    font-size: 4rem;
+  }
+}
 .landing .hero .overlay {
   display: flex;
   justify-content: center;
@@ -379,6 +390,8 @@ footer .main-footer #subscribe-bottom form .inputs button {
   .landing .hero .overlay {
     z-index: 1;
     width: 100vw;
+    height: 30vh;
+    background: none;
   }
 }
 .landing .hero .overlay h2 {
@@ -387,33 +400,77 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .hero .overlay p {
   margin: 3vh 5vw;
 }
-.landing .hero .overlay button {
+.landing .hero .overlay #learnmore {
   margin: 10px 10px 0px 5px;
   padding: 5px;
   background-color: #2A484E;
   color: white;
   border-color: 2px solid white;
 }
-.landing .testimonials {
+.landing .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.landing .content .testimonials {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   width: 62vw;
-  margin: 8vw 2vw;
+  margin: 8vh 2vw;
 }
-.landing .testimonials .card {
+@media (max-width: 500px) {
+  .landing .content .testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80vw;
+    margin: 2vh 2vw;
+  }
+}
+.landing .content .testimonials .card {
   width: 19vw;
   background-color: rgba(225, 225, 225, 0.8);
   color: #2A484E;
+  margin-top: 2vh;
 }
-.landing .testimonials .card .quote {
+@media (max-width: 500px) {
+  .landing .content .testimonials .card {
+    width: 70vw;
+    background: none;
+  }
+}
+.landing .content .testimonials .card .quote {
   padding: 2vh 1.5vw;
 }
-.landing .testimonials .card .attribution {
+.landing .content .testimonials .card .attribution {
   background-color: #F2AB96;
   text-align: center;
   padding: 4vh 1vw;
   align-items: flex-end;
+}
+.landing .content #getstarted {
+  margin: 8.3vw;
+  padding: 30px;
+  background-color: #2A484E;
+  color: #F2AB96;
+  border: none;
+  font-size: 2rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content #getstarted {
+    width: 100vw;
+    margin: 3vh;
+  }
 }
 .howitworks {
   background-image: url("../images/aerial-photography-aerial-shot-aerial-view-2660095.jpg");
@@ -422,7 +479,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
 }
 @media (max-width: 500px) {
   .howitworks {
-    background-size: 800%;
+    background-size: 300%;
   }
 }
 .howitworks .instructions {
@@ -435,7 +492,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
 }
 @media (max-width: 500px) {
   .howitworks .instructions {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .howitworks .instructions .sidebar-quote {
@@ -465,10 +522,14 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .howitworks .instructions .list {
   width: 67vw;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-  margin: 5vh auto 10vh;
 }
 .howitworks .instructions .list h2 {
   margin: 2vw auto 4vw;
+}
+@media (max-width: 500px) {
+  .howitworks .instructions .list h2 {
+    margin: 2vh 1vw;
+  }
 }
 .howitworks .instructions .list ol {
   font-family: 'Open Sans', sans-serif;
