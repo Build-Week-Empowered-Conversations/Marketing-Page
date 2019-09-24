@@ -570,6 +570,46 @@ footer .main-footer #subscribe-bottom form .inputs button {
   font-size: 2rem;
   margin: 6vh 3vw;
 }
+.container {
+  background: linear-gradient(180deg, #2a484e 0%, #377375 33%, #a8d8cd 100%);
+}
+.container .about-text {
+  width: 60vw;
+  margin: 15vh auto 0;
+}
+.container .about-text h2 {
+  text-align: center;
+  margin: 3vh;
+}
+.container .about-text h3,
+.container .about-text p {
+  margin: 3vh;
+}
+.container hr {
+  width: 60vw;
+  margin: 5vh 20vw;
+}
+.container .theTeam {
+  width: 60vw;
+  margin: 0 auto;
+  text-align: center;
+}
+.container .theTeam h2 {
+  margin: 0 0 3vh;
+}
+.container .theTeam .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.container .theTeam .grid .teamMember {
+  margin: 3vh 1vw;
+  text-align: center;
+}
+.container .theTeam .grid img {
+  height: 25vh;
+  border-radius: 50%;
+}
 .tool {
   background-image: linear-gradient(180deg, #2a484e 0%, #377375 33%, #a8d8cd 100%);
   background-repeat: no-repeat;
