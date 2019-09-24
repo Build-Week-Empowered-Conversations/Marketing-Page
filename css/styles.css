@@ -224,7 +224,7 @@ nav #nav-links a {
 }
 footer {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 50px;
 }
 footer .footer-bar {
@@ -248,8 +248,11 @@ footer .footer-bar {
     padding: 2vh 1vw;
   }
 }
+footer .footer-bar p {
+  font-size: 1rem;
+}
 @media (max-width: 500px) {
-  footer .footer-bar span {
+  footer .footer-bar p {
     margin: 1vh 0vw;
   }
 }
@@ -479,7 +482,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
 }
 @media (max-width: 500px) {
   .howitworks {
-    background-size: 300%;
+    background-size: 400%;
   }
 }
 .howitworks .instructions {
@@ -493,6 +496,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
 @media (max-width: 500px) {
   .howitworks .instructions {
     flex-direction: column-reverse;
+    width: 100vw;
   }
 }
 .howitworks .instructions .sidebar-quote {
@@ -523,12 +527,17 @@ footer .main-footer #subscribe-bottom form .inputs button {
   width: 67vw;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
+@media (max-width: 500px) {
+  .howitworks .instructions .list {
+    width: 100vw;
+  }
+}
 .howitworks .instructions .list h2 {
   margin: 2vw auto 4vw;
 }
 @media (max-width: 500px) {
   .howitworks .instructions .list h2 {
-    margin: 2vh 1vw;
+    margin: 0;
   }
 }
 .howitworks .instructions .list ol {
@@ -539,6 +548,11 @@ footer .main-footer #subscribe-bottom form .inputs button {
   text-align: left;
   width: 50vw;
   margin: auto;
+}
+@media (max-width: 500px) {
+  .howitworks .instructions .list ol {
+    width: 90vw;
+  }
 }
 .howitworks .instructions .list ol li {
   margin: 2vw;
