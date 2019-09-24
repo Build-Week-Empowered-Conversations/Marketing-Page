@@ -577,6 +577,11 @@ footer .main-footer #subscribe-bottom form .inputs button {
   width: 60vw;
   margin: 15vh auto 0;
 }
+@media (max-width: 500px) {
+  .container .about-text {
+    width: 80vw;
+  }
+}
 .container .about-text h2 {
   text-align: center;
   margin: 3vh;
@@ -589,6 +594,12 @@ footer .main-footer #subscribe-bottom form .inputs button {
   width: 60vw;
   margin: 5vh 20vw;
 }
+@media (max-width: 500px) {
+  .container hr {
+    width: 80vw;
+    margin: 5vh 10vw;
+  }
+}
 .container .theTeam {
   width: 60vw;
   margin: 0 auto;
@@ -596,7 +607,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
 }
 @media (max-width: 500px) {
   .container .theTeam {
-    width: 90vw;
+    width: 80vw;
   }
 }
 .container .theTeam h2 {
