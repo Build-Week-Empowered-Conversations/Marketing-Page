@@ -12,20 +12,40 @@ footer {
     line-height: 1.4;
     letter-spacing: .1rem;
     padding: 10px 50px;
+    @media @mobile {
+      .flex(center, center);
+      flex-direction: column-reverse;
+      padding: 2vh 1vw;
+    }
+    span {
+      @media @mobile {
+        margin: 1vh 0vw;
+      }
+    }
     a {
       margin: 5px 10px;
       font-size: 2rem;
       color: @terracotta;
+      @media @mobile {
+        margin: 3vh 4vw;
+      }
     }
   }
   .main-footer{
     .flex(space-between, center);
     background-color: @light-color;
-
+    @media @mobile {
+      .flex(center, center);
+      flex-direction: column;
+    }
     .nav-links{
       .flex(center, right);
       flex-direction: column;
       margin: 20px 50px;
+      @media @mobile {
+        .flex(center, center);
+        margin: 0vh 1vw 2vh;
+      }
       a {
         margin: 5px;
         color: @dark-color;
@@ -36,6 +56,9 @@ footer {
     #subscribe-bottom {
       .flex(center, center);
       margin: 10px 50px;
+      @media @mobile {
+        margin: 2vh 1vw;
+      }
       form {
         flex-direction: column;
         color: @dark-color;
