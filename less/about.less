@@ -22,18 +22,25 @@ hr {
   width: 60vw;
   margin: 0 auto;
   text-align: center;
+  @media @mobile {
+    width: 90vw;
+  }
   h2 {
     margin: 0 0 3vh;
   }
   .grid {
     .flex(space-around, center);
+    flex-wrap: wrap;
     .teamMember{
-      margin: 3vh 1vw;
+      margin: 3vh 2vw;
       text-align: center;
     }
     img {
       height: 25vh;
       border-radius: 50%;
+      @media @mobile {
+        height: 25vw;
+      }
     }
   }
 
