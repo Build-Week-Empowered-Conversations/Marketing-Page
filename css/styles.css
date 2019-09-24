@@ -1,0 +1,493 @@
+.btn-white {
+  background-color: rgba(255, 255, 255.5);
+  cursor: button;
+  font-size: 1.8rem;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+.btn-white:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.3);
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'DM Serif Text', serif;
+}
+h1 {
+  font-size: 6rem;
+  letter-spacing: 0.7rem;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.4rem;
+}
+h4 {
+  font-size: 2rem;
+}
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+}
+a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  color: #DDEFE3;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+}
+button {
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: fixed;
+  z-index: 9999;
+  width: 100vw;
+  height: 50px;
+  margin: 2vh 0;
+}
+nav img {
+  margin: 0 3vw;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  nav img {
+    margin: 2vw;
+  }
+}
+nav #nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2vw;
+}
+nav #nav-links a {
+  margin: 0 2vw;
+}
+footer {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+}
+footer .footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2A484E;
+  color: #F2AB96;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  padding: 10px 50px;
+}
+@media (max-width: 500px) {
+  footer .footer-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding: 2vh 1vw;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer-bar span {
+    margin: 1vh 0vw;
+  }
+}
+footer .footer-bar a {
+  margin: 5px 10px;
+  font-size: 2rem;
+  color: #F2AB96;
+}
+@media (max-width: 500px) {
+  footer .footer-bar a {
+    margin: 3vh 4vw;
+  }
+}
+footer .main-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #DDEFE3;
+}
+@media (max-width: 500px) {
+  footer .main-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+footer .main-footer .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: right;
+  flex-direction: column;
+  margin: 20px 50px;
+}
+@media (max-width: 500px) {
+  footer .main-footer .nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0vh 1vw 2vh;
+  }
+}
+footer .main-footer .nav-links a {
+  margin: 5px;
+  color: #2A484E;
+  text-align: right;
+}
+footer .main-footer #subscribe-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 50px;
+}
+@media (max-width: 500px) {
+  footer .main-footer #subscribe-bottom {
+    margin: 2vh 1vw;
+  }
+}
+footer .main-footer #subscribe-bottom form {
+  flex-direction: column;
+  color: #2A484E;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  margin: 10px;
+}
+footer .main-footer #subscribe-bottom form .inputs {
+  display: flex;
+  font-size: 1rem;
+}
+footer .main-footer #subscribe-bottom form .inputs input {
+  width: 200px;
+  margin: 10px 5px 0px 0px;
+  padding: 5px;
+  background-color: white;
+  color: #2A484E;
+  border: 1px solid white;
+}
+footer .main-footer #subscribe-bottom form .inputs button {
+  margin: 10px 10px 0px 5px;
+  padding: 5px;
+  background-color: #2A484E;
+  color: white;
+  border-color: 2px solid white;
+}
+.landing {
+  background-image: url("../images/aerial-shot-bird-s-eye-view-from-above-1556797.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.landing .hero {
+  display: flex;
+}
+@media (max-width: 500px) {
+  .landing .hero {
+    flex-direction: column;
+  }
+}
+.landing .hero .hero-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  width: 67vw;
+  height: 100vh;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+.landing .hero .hero-text p {
+  margin: 6vw;
+}
+.landing .hero .overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(225, 225, 225, 0.7);
+  z-index: 3;
+  width: 33vw;
+  height: 100vh;
+  color: #2A484E;
+}
+@media (max-width: 500px) {
+  .landing .hero .overlay {
+    z-index: 1;
+    width: 100vw;
+  }
+}
+.landing .hero .overlay h2 {
+  margin: 1vh 5vw;
+}
+.landing .hero .overlay p {
+  margin: 3vh 5vw;
+}
+.landing .hero .overlay button {
+  margin: 10px 10px 0px 5px;
+  padding: 5px;
+  background-color: #2A484E;
+  color: white;
+  border-color: 2px solid white;
+}
+.landing .testimonials {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 62vw;
+  margin: 8vw 2vw;
+}
+.landing .testimonials .card {
+  width: 19vw;
+  background-color: rgba(225, 225, 225, 0.8);
+  color: #2A484E;
+}
+.landing .testimonials .card .quote {
+  padding: 2vh 1.5vw;
+}
+.landing .testimonials .card .attribution {
+  background-color: #F2AB96;
+  text-align: center;
+  padding: 4vh 1vw;
+  align-items: flex-end;
+}
+.howitworks {
+  background-image: url("../images/aerial-photography-aerial-shot-aerial-view-2660095.jpg");
+  background-repeat: no-repeat;
+  background-size: 140%;
+}
+@media (max-width: 500px) {
+  .howitworks {
+    background-size: 800%;
+  }
+}
+.howitworks .instructions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10vh auto 0;
+  color: #DDEFE3;
+}
+@media (max-width: 500px) {
+  .howitworks .instructions {
+    flex-direction: column;
+  }
+}
+.howitworks .instructions .sidebar-quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgba(225, 225, 225, 0.6);
+  z-index: 3;
+  width: 33vw;
+  height: 80vh;
+  color: #2A484E;
+}
+@media (max-width: 500px) {
+  .howitworks .instructions .sidebar-quote {
+    width: 90vw;
+    height: 30vh;
+  }
+}
+.howitworks .instructions .sidebar-quote h3 {
+  text-align: center;
+  margin: 5vw;
+  line-height: 4rem;
+  font-style: italic;
+}
+.howitworks .instructions .list {
+  width: 67vw;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+  margin: 5vh auto 10vh;
+}
+.howitworks .instructions .list h2 {
+  margin: 2vw auto 4vw;
+}
+.howitworks .instructions .list ol {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  width: 50vw;
+  margin: auto;
+}
+.howitworks .instructions .list ol li {
+  margin: 2vw;
+}
+.howitworks .instructions .list p {
+  font-size: 2rem;
+  margin: 2vw;
+}
+.tool {
+  background-image: linear-gradient(180deg, #2a484e 0%, #377375 33%, #a8d8cd 100%);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
