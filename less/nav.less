@@ -5,52 +5,22 @@ nav {
   z-index: 9999;
   width: 100vw;
   height: 50px;
-  border: 1px solid red;
-  margin: 2vw;
-
-  .navbar {
-    .flex(space-between, center);
-    width: 67vw;
+  margin: 2vh 0;
+  img {
+    margin: 0 3vw;
+  }
+  @media @mobile {
+      .flex(center, center);
+      flex-direction: column;
+      img {
+        margin: 2vw;
+      }
+    }
     #nav-links{
       .flex(space-between, center);
+      margin: 0 2vw;
       a {
-        margin: 30px;
+        margin: 0 2vw;
       }
     }
-  }
-
-  #subscribe-top {
-    .flex(flex-end, center);
-
-    form {
-      flex-direction: column;
-      color: white;
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.2rem;
-      line-height: 1.4;
-      letter-spacing: .1rem;
-      .inputs {
-        display: flex;
-        font-size: 1rem;
-        input {
-          width: 200px;
-          margin: 10px 5px 0px 0px;
-          padding:5px;
-          background-color: rgba(225, 225, 225, 0.5);
-          color: @dark-color;
-          border: 1px solid white;
-        }
-        button {
-          margin: 10px 10px 0px 5px;
-          padding:5px;
-          background-color: @dark-color;
-          color: white;
-          border-color: 2px solid white;
-
-        }
-      }
-      
-      
-    }
-  }
 }
