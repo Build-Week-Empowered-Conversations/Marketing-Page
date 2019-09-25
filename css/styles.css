@@ -502,6 +502,20 @@ footer .main-footer #subscribe-bottom form .inputs button {
     background-size: 350%;
   }
 }
+.howitworks #getstarted {
+  width: 22vw;
+  padding: 30px;
+  background-color: #2A484E;
+  color: #F2AB96;
+  border: none;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .howitworks #getstarted {
+    width: 60vw;
+  }
+}
 .howitworks .instructions {
   display: flex;
   justify-content: center;
