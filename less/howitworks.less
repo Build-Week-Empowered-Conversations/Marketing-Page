@@ -1,9 +1,10 @@
 .howitworks {
   background-image: url("../images/aerial-photography-aerial-shot-aerial-view-2660095.jpg");
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 120%;
+  background-attachment: fixed;
   @media @mobile, @tablet {
-    background-size: 400%;
+    background-size: 350%;
   }
 
   .instructions {
@@ -24,9 +25,14 @@
       width: 33vw;
       height: 80vh;
       color: @dark-color;
-      @media @mobile, @tablet {
+      @media @mobile {
         width: 90vw;
         height: 30vh;
+        margin: 4vh 1vw;
+      }
+      @media @tablet {
+        width: 90vw;
+        height: 10vh;
         margin: 4vh 1vw;
       }
       h3 {

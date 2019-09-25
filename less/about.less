@@ -1,9 +1,19 @@
-.container{
-  background: @gradient;
+  .about {
+  background: url('../images/aerial-shot-art-beautiful-2300395.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  @media @mobile, @tablet {
+    background-size: 125%;
+  }
+
 
 .about-text {
   width: 60vw;
   margin: 15vh auto 0;
+  padding: 5vh 5vw;
+  background-color: rgba(225, 225, 225, 0.6);
+  color: @dark-color;
   @media @mobile {
     width: 80vw;
   }
@@ -17,8 +27,8 @@
 }
 
 hr {
-  width: 60vw;
-  margin: 5vh 20vw;
+  width: 70vw;
+  margin: 5vh 15vw;
   @media @mobile {
     width: 80vw;
     margin: 5vh 10vw;
@@ -27,13 +37,16 @@ hr {
 
 .theTeam {
   width: 60vw;
-  margin: 0 auto;
+  margin: 0 auto 5vh;
   text-align: center;
+  background-color: rgba(225, 225, 225, 0.5);
+  color: @dark-color;
   @media @mobile {
     width: 80vw;
   }
   h2 {
-    margin: 0 0 3vh;
+    padding-top: 5vh;
+    margin: 5vh 0 3vh;
   }
   .grid {
     .flex(space-around, center);
