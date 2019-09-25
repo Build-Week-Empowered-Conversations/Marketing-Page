@@ -412,14 +412,21 @@ footer .main-footer #subscribe-bottom form .inputs button {
   border: none;
   font-size: 1.5rem;
 }
-.landing .content .talk {
+@media (max-width: 500px) {
+  .landing .hero .overlay .learnmore {
+    width: 30vw;
+  }
+}
+.landing .content {
   width: 100vw;
+}
+.landing .content .talk {
   margin: 0 auto 5vh;
   text-align: center;
   background-color: rgba(225, 225, 225, 0.7);
   color: #2A484E;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .landing .content .talk {
     width: 80vw;
   }
@@ -427,6 +434,11 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .content .talk h2 {
   text-align: left;
   padding: 5vh;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content .talk h2 {
+    text-align: center;
+  }
 }
 .landing .content .talk .grid {
   display: flex;
@@ -446,7 +458,7 @@ footer .main-footer #subscribe-bottom form .inputs button {
   text-align: center;
   width: 25vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .landing .content .talk .grid .topic {
     width: 80vw;
     padding: 0 6vw;
@@ -455,9 +467,9 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .content .talk .grid .topic img {
   height: 15vh;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .landing .content .talk .grid .topic img {
-    height: 25vw;
+    height: 18vw;
   }
 }
 .landing .content .talk .grid .topic h4 {

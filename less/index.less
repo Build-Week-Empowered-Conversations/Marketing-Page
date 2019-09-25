@@ -48,6 +48,7 @@
       }
       p{
         margin: 3vh 5vw;
+        
       }
       .learnmore {
         width: 15vw;
@@ -57,22 +58,29 @@
         color: @terracotta;
         border: none;
         font-size: 1.5rem;
+        @media @mobile {
+          width: 30vw;
+        }
       }
     }
   }
   .content {
+    width: 100vw;
+
     .talk {
-      width: 100vw;
       margin: 0 auto 5vh;
       text-align: center;
       background-color: rgba(225, 225, 225, 0.7);
       color: @dark-color;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 80vw;
       }
       h2 {
         text-align: left;
         padding: 5vh;
+        @media @mobile, @tablet {
+          text-align: center;
+        }
       }
       .grid {
         .flex(space-around, center);
@@ -84,14 +92,14 @@
         .topic{
           text-align: center;
           width: 25vw;
-          @media @mobile {
+          @media @mobile, @tablet {
             width: 80vw;
             padding: 0 6vw;
           }
           img {
             height: 15vh;
-            @media @mobile {
-              height: 25vw;
+            @media @mobile, @tablet {
+              height: 18vw;
             }
           }
           h4 {
