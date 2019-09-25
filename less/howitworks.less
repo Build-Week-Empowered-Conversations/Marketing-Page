@@ -1,32 +1,34 @@
 .howitworks {
   background-image: url("../images/aerial-photography-aerial-shot-aerial-view-2660095.jpg");
   background-repeat: no-repeat;
-  background-size: 140%;
-  @media @mobile {
-    background-size: 300%;
+  background-size: 120%;
+  background-attachment: fixed;
+  @media @mobile, @tablet {
+    background-size: 350%;
+  }
+  #getstarted {
+    width: 22vw;
+    padding: 30px;
+    background-color: @dark-color;
+    color: @terracotta;
+    border: none;
+    margin: 0 auto;
+    font-size: 2rem;
+    @media @mobile, @tablet {
+      width: 60vw;
+    }
   }
 
   .instructions {
     .flex(center, center);
+    flex-direction: column;
     text-align: center;
-    margin: 10vh auto 0;
     color: @light-color;
-    @media @mobile {
-      flex-direction: column-reverse;
-    }
+
     .sidebar-quote {
-      .flex(center, center);
-      flex-direction: column;
-      text-align: center;
-      background-color: rgba(225, 225, 225, 0.6);
-      z-index: 3;
-      width: 33vw;
-      height: 80vh;
+      background-color: rgba(225, 225, 225, 0.5);
+      width: 100vw;
       color: @dark-color;
-      @media @mobile {
-        width: 90vw;
-        height: 30vh;
-      }
       h3 {
       text-align: center;
       margin: 5vw;
@@ -35,32 +37,29 @@
       }
     }
 
-    .list {
-      width: 67vw;
-      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
-      // margin: 5vh auto 10vh;
- 
-    h2 {
-      margin: 2vw auto 4vw;
-      @media @mobile {
-        margin: 2vh 1vw;
+    .fling-minislide {
+      width:100vw;
+      height: 80vh;
+      position:relative; 
+      @media @mobile, @tablet {
+        height: 50vh;
+      }
+      img{ 
+        .flex(center, center);
+        margin-top: 10vh;
+        position: absolute; 
+        animation:fling-minislide 20s infinite; 
+        opacity:0; 
+        width: 100%; 
+        height: auto;
+        @media @mobile, @tablet {
+          margin-top: 15vh;
         }
-    }
-    ol {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 1.6rem;
-      line-height: 1.4;
-      letter-spacing: .1rem;
-      text-align: left;
-      width: 50vw;
-      margin: auto;
-      li {
-        margin: 2vw;
       }
     }
-    p {
-      font-size: 2rem;
-      margin: 2vw;
-    }
-  }}
-}
+
+      @keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+      .fling-minislide img:nth-child(3){animation-delay:1s;}
+      .fling-minislide img:nth-child(2){animation-delay:6s;}
+      .fling-minislide img:nth-child(1){animation-delay:11s;}
+}}

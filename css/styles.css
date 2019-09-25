@@ -208,6 +208,7 @@ nav img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
   nav img {
     margin: 2vw;
@@ -224,7 +225,7 @@ nav #nav-links a {
 }
 footer {
   position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 50px;
 }
 footer .footer-bar {
@@ -248,8 +249,11 @@ footer .footer-bar {
     padding: 2vh 1vw;
   }
 }
+footer .footer-bar p {
+  font-size: 1rem;
+}
 @media (max-width: 500px) {
-  footer .footer-bar span {
+  footer .footer-bar p {
     margin: 1vh 0vw;
   }
 }
@@ -400,66 +404,82 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .hero .overlay p {
   margin: 3vh 5vw;
 }
-.landing .hero .overlay #learnmore {
-  margin: 10px 10px 0px 5px;
-  padding: 5px;
+.landing .hero .overlay .learnmore {
+  width: 15vw;
+  padding: 10px;
   background-color: #2A484E;
-  color: white;
-  border-color: 2px solid white;
+  color: #F2AB96;
+  border: none;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .landing .hero .overlay .learnmore {
+    width: 30vw;
+  }
 }
 .landing .content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100vw;
+}
+.landing .content .talk {
+  margin: 0 auto 5vh;
+  text-align: center;
+  background-color: rgba(225, 225, 225, 0.7);
+  color: #2A484E;
 }
 @media (max-width: 500px), (max-width: 800px) {
-  .landing .content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-}
-.landing .content .testimonials {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  width: 62vw;
-  margin: 8vh 2vw;
-}
-@media (max-width: 500px) {
-  .landing .content .testimonials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  .landing .content .talk {
     width: 80vw;
-    margin: 2vh 2vw;
   }
 }
-.landing .content .testimonials .card {
-  width: 19vw;
-  background-color: rgba(225, 225, 225, 0.8);
-  color: #2A484E;
-  margin-top: 2vh;
+.landing .content .talk h2 {
+  text-align: left;
+  padding: 5vh;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content .talk h2 {
+    text-align: center;
+  }
+}
+.landing .content .talk .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
 }
 @media (max-width: 500px) {
-  .landing .content .testimonials .card {
-    width: 70vw;
-    background: none;
+  .landing .content .talk .grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
-.landing .content .testimonials .card .quote {
-  padding: 2vh 1.5vw;
-}
-.landing .content .testimonials .card .attribution {
-  background-color: #F2AB96;
+.landing .content .talk .grid .topic {
   text-align: center;
-  padding: 4vh 1vw;
-  align-items: flex-end;
+  width: 25vw;
 }
-.landing .content #getstarted {
-  margin: 8.3vw;
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content .talk .grid .topic {
+    width: 80vw;
+    padding: 0 6vw;
+  }
+}
+.landing .content .talk .grid .topic img {
+  height: 15vh;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .landing .content .talk .grid .topic img {
+    height: 18vw;
+  }
+}
+.landing .content .talk .grid .topic h4 {
+  margin: 3vh 0;
+}
+.landing .content .talk .grid .topic p {
+  margin-bottom: 5vh;
+}
+.landing .content .talk .grid #getstarted {
+  width: 22vw;
   padding: 30px;
   background-color: #2A484E;
   color: #F2AB96;
@@ -467,51 +487,47 @@ footer .main-footer #subscribe-bottom form .inputs button {
   font-size: 2rem;
 }
 @media (max-width: 500px), (max-width: 800px) {
-  .landing .content #getstarted {
-    width: 100vw;
-    margin: 3vh;
+  .landing .content .talk .grid #getstarted {
+    width: 60vw;
   }
 }
 .howitworks {
   background-image: url("../images/aerial-photography-aerial-shot-aerial-view-2660095.jpg");
   background-repeat: no-repeat;
-  background-size: 140%;
+  background-size: 120%;
+  background-attachment: fixed;
 }
-@media (max-width: 500px) {
+@media (max-width: 500px), (max-width: 800px) {
   .howitworks {
-    background-size: 300%;
+    background-size: 350%;
+  }
+}
+.howitworks #getstarted {
+  width: 22vw;
+  padding: 30px;
+  background-color: #2A484E;
+  color: #F2AB96;
+  border: none;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .howitworks #getstarted {
+    width: 60vw;
   }
 }
 .howitworks .instructions {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 10vh auto 0;
-  color: #DDEFE3;
-}
-@media (max-width: 500px) {
-  .howitworks .instructions {
-    flex-direction: column-reverse;
-  }
-}
-.howitworks .instructions .sidebar-quote {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
-  background-color: rgba(225, 225, 225, 0.6);
-  z-index: 3;
-  width: 33vw;
-  height: 80vh;
-  color: #2A484E;
+  color: #DDEFE3;
 }
-@media (max-width: 500px) {
-  .howitworks .instructions .sidebar-quote {
-    width: 90vw;
-    height: 30vh;
-  }
+.howitworks .instructions .sidebar-quote {
+  background-color: rgba(225, 225, 225, 0.5);
+  width: 100vw;
+  color: #2A484E;
 }
 .howitworks .instructions .sidebar-quote h3 {
   text-align: center;
@@ -519,33 +535,124 @@ footer .main-footer #subscribe-bottom form .inputs button {
   line-height: 4rem;
   font-style: italic;
 }
-.howitworks .instructions .list {
-  width: 67vw;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+.howitworks .instructions .fling-minislide {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
-.howitworks .instructions .list h2 {
-  margin: 2vw auto 4vw;
-}
-@media (max-width: 500px) {
-  .howitworks .instructions .list h2 {
-    margin: 2vh 1vw;
+@media (max-width: 500px), (max-width: 800px) {
+  .howitworks .instructions .fling-minislide {
+    height: 50vh;
   }
 }
-.howitworks .instructions .list ol {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-  text-align: left;
-  width: 50vw;
-  margin: auto;
+.howitworks .instructions .fling-minislide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  position: absolute;
+  animation: fling-minislide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
 }
-.howitworks .instructions .list ol li {
-  margin: 2vw;
+@media (max-width: 500px), (max-width: 800px) {
+  .howitworks .instructions .fling-minislide img {
+    margin-top: 15vh;
+  }
 }
-.howitworks .instructions .list p {
-  font-size: 2rem;
-  margin: 2vw;
+@keyframes fling-minislide {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+.howitworks .instructions .fling-minislide img:nth-child(3) {
+  animation-delay: 1s;
+}
+.howitworks .instructions .fling-minislide img:nth-child(2) {
+  animation-delay: 6s;
+}
+.howitworks .instructions .fling-minislide img:nth-child(1) {
+  animation-delay: 11s;
+}
+.about {
+  background: url('../images/aerial-shot-art-beautiful-2300395.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+}
+@media (max-width: 500px), (max-width: 800px) {
+  .about {
+    background-size: 125%;
+  }
+}
+.about .about-text {
+  width: 60vw;
+  margin: 15vh auto 0;
+  padding: 5vh 5vw;
+  background-color: rgba(225, 225, 225, 0.6);
+  color: #2A484E;
+}
+@media (max-width: 500px) {
+  .about .about-text {
+    width: 80vw;
+  }
+}
+.about .about-text h2 {
+  text-align: center;
+  margin: 3vh;
+}
+.about .about-text h3,
+.about .about-text p {
+  margin: 3vh;
+}
+.about hr {
+  width: 70vw;
+  margin: 5vh 15vw;
+}
+@media (max-width: 500px) {
+  .about hr {
+    width: 80vw;
+    margin: 5vh 10vw;
+  }
+}
+.about .theTeam {
+  width: 60vw;
+  margin: 0 auto 5vh;
+  text-align: center;
+  background-color: rgba(225, 225, 225, 0.5);
+  color: #2A484E;
+}
+@media (max-width: 500px) {
+  .about .theTeam {
+    width: 80vw;
+  }
+}
+.about .theTeam h2 {
+  padding-top: 5vh;
+  margin: 5vh 0 3vh;
+}
+.about .theTeam .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .theTeam .grid .teamMember {
+  margin: 3vh 2vw;
+  text-align: center;
+}
+.about .theTeam .grid img {
+  height: 25vh;
+  border-radius: 50%;
+}
+@media (max-width: 500px) {
+  .about .theTeam .grid img {
+    height: 25vw;
+  }
 }
 .tool {
   background-image: linear-gradient(180deg, #2a484e 0%, #377375 33%, #a8d8cd 100%);

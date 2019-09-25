@@ -48,64 +48,85 @@
       }
       p{
         margin: 3vh 5vw;
+        
       }
-      #learnmore {
-        margin: 10px 10px 0px 5px;
-        padding: 5px;
+      .learnmore {
+        width: 15vw;
+        padding: 10px;
         background-color: @dark-color;
-        color: white;
-        border-color: 2px solid white;
+        // border-color: 2px solid white;
+        color: @terracotta;
+        border: none;
+        font-size: 1.5rem;
+        @media @mobile {
+          width: 30vw;
+        }
       }
     }
   }
   .content {
-    .flex(space-between, center);
-    @media @mobile, @tablet {
-      .flex(center, center);
-      flex-direction: column;
-    }
-    .testimonials {
-      .flex(space-between, stretch);
-      width: 62vw;
-      margin: 8vh 2vw;
-      @media @mobile {
-        .flex(center, center);
-        flex-direction: column;
-        width: 80vw; 
-        margin: 2vh 2vw;
+    width: 100vw;
+
+    .talk {
+      margin: 0 auto 5vh;
+      text-align: center;
+      background-color: rgba(225, 225, 225, 0.7);
+      color: @dark-color;
+      @media @mobile, @tablet {
+        width: 80vw;
       }
-      .card {
-        width: 19vw;
-        background-color: rgba(225, 225, 225, 0.8);
-        color: @dark-color;
-        margin-top: 2vh;
+      h2 {
+        text-align: left;
+        padding: 5vh;
+        @media @mobile, @tablet {
+          text-align: center;
+        }
+      }
+      .grid {
+        .flex(space-around, center);
+        flex-wrap: wrap;
         @media @mobile {
-          width: 70vw;
-          background: none;
+          .flex(center, center);
+          flex-direction: column;
+        }
+        .topic{
+          text-align: center;
+          width: 25vw;
+          @media @mobile, @tablet {
+            width: 80vw;
+            padding: 0 6vw;
+          }
+          img {
+            height: 15vh;
+            @media @mobile, @tablet {
+              height: 18vw;
+            }
+          }
+          h4 {
+          margin: 3vh 0;
+          }
+          p {
+            margin-bottom: 5vh;
+
+          }
+        }
+        #getstarted {
+          width: 22vw;
+          padding: 30px;
+          background-color: @dark-color;
+          // border-color: 2px solid white;
+          color: @terracotta;
+          border: none;
+          font-size: 2rem;
+          @media @mobile, @tablet {
+            width: 60vw;
+          }
         }
 
-        .quote{
-          padding: 2vh 1.5vw;
-        }
-        .attribution{
-          background-color: @terracotta;
-          text-align: center;
-          padding: 4vh 1vw;
-          align-items: flex-end;
-        }
+
+
       }
     }
-    #getstarted {
-      margin: 8.3vw;
-      padding: 30px;
-      background-color: @dark-color;
-      color: @terracotta;
-      border: none;
-      font-size: 2rem;
-      @media @mobile, @tablet {
-        width: 100vw;
-        margin: 3vh;
-      }
-    }
+
   }
 }
