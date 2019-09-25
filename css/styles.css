@@ -208,6 +208,7 @@ nav img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
   }
   nav img {
     margin: 2vw;
@@ -403,11 +404,13 @@ footer .main-footer #subscribe-bottom form .inputs button {
 .landing .hero .overlay p {
   margin: 3vh 5vw;
 }
-.landing .hero .overlay #learn-more {
-  margin: 10px 10px 0px 5px;
-  padding: 5px;
+.landing .hero .overlay .learnmore {
+  width: 15vw;
+  padding: 10px;
   background-color: #2A484E;
-  color: white;
+  color: #F2AB96;
+  border: none;
+  font-size: 1.5rem;
 }
 .landing .content .talk {
   width: 100vw;
@@ -491,41 +494,14 @@ footer .main-footer #subscribe-bottom form .inputs button {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  margin: 10vh auto 0;
-  color: #DDEFE3;
-}
-@media (max-width: 500px), (max-width: 800px) {
-  .howitworks .instructions {
-    flex-direction: column-reverse;
-    width: 100vw;
-  }
-}
-.howitworks .instructions .sidebar-quote {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   text-align: center;
+  color: #DDEFE3;
+}
+.howitworks .instructions .sidebar-quote {
   background-color: rgba(225, 225, 225, 0.5);
-  z-index: 3;
-  width: 33vw;
-  height: 80vh;
+  width: 100vw;
   color: #2A484E;
-}
-@media (max-width: 500px) {
-  .howitworks .instructions .sidebar-quote {
-    width: 90vw;
-    height: 30vh;
-    margin: 4vh 1vw;
-  }
-}
-@media (max-width: 800px) {
-  .howitworks .instructions .sidebar-quote {
-    width: 90vw;
-    height: 10vh;
-    margin: 4vh 1vw;
-  }
 }
 .howitworks .instructions .sidebar-quote h3 {
   text-align: center;
@@ -533,51 +509,48 @@ footer .main-footer #subscribe-bottom form .inputs button {
   line-height: 4rem;
   font-style: italic;
 }
-.howitworks .instructions .list {
-  width: 67vw;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
+.howitworks .instructions .fling-minislide {
+  width: 100vw;
+  height: 80vh;
+  position: relative;
 }
 @media (max-width: 500px), (max-width: 800px) {
-  .howitworks .instructions .list {
-    width: 100vw;
+  .howitworks .instructions .fling-minislide {
+    height: 50vh;
   }
 }
-.howitworks .instructions .list h2 {
-  margin: 2vw auto 4vw;
+.howitworks .instructions .fling-minislide img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  position: absolute;
+  animation: fling-minislide 20s infinite;
+  opacity: 0;
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 500px), (max-width: 800px) {
-  .howitworks .instructions .list h2 {
-    margin: 4vh 1vw;
+  .howitworks .instructions .fling-minislide img {
+    margin-top: 15vh;
   }
 }
-.howitworks .instructions .list ol {
-  list-style: none;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  line-height: 1.4;
-  letter-spacing: 0.1rem;
-  text-align: left;
-  width: 50vw;
-  margin: auto;
-}
-@media (max-width: 500px), (max-width: 800px) {
-  .howitworks .instructions .list ol {
-    width: 90vw;
+@keyframes fling-minislide {
+  25% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
   }
 }
-.howitworks .instructions .list ol li {
-  margin: 2vw;
+.howitworks .instructions .fling-minislide img:nth-child(3) {
+  animation-delay: 1s;
 }
-.howitworks .instructions .list ol li ::before {
-  font-weight: bold;
-  font-size: 3rem;
-  margin-right: 0.5rem;
-  font-family: 'DM Serif Text', serif;
-  line-height: 1;
+.howitworks .instructions .fling-minislide img:nth-child(2) {
+  animation-delay: 6s;
 }
-.howitworks .instructions .list ol p {
-  font-size: 2rem;
-  margin: 6vh 3vw;
+.howitworks .instructions .fling-minislide img:nth-child(1) {
+  animation-delay: 11s;
 }
 .about {
   background: url('../images/aerial-shot-art-beautiful-2300395.jpg');
